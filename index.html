@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Expensa Fácil - La Plataforma que Simplifica tu Vida en Consorcios</title>
+
+  
+    <link rel="icon" href=".imagenes/Nuevo-Logo-EF.png" type="image/PNG">
+
+   
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="Style.css">
+</head>
+<body>
+
+    <!-- Menú de navegación -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+        
+        <a class="navbar-brand" href="#"><img src=".imagenes/Nuevo-Logo-EF.png" alt="Logo de la empresa" height="40px" class="d-inline-block align-top"></a>
+
+        <!-- Botón de colapso de Bootstrap con botón de inicio de sesión -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse justify-content-between" id="navbarNav">
+            <ul class="navbar-nav mx-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#sobre-nosotros">Sobre Nosotros</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#nuestros-servicios">Nuestros Servicios</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contacto">Contacto</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="register.html">Regístrate</a>
+                </li>
+            </ul>
+            <a href="login.html" class="btn btn-transparent btn-sm ml-2 font-weight-bold">Iniciar Sesión</a>
+        </div>
+    </nav>
+
+    <!-- Contenido de la página -->
+
+    <section id="sobre-nosotros" class="home">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <img src=".imagenes/Nuevo-Logo-EF.png" alt="Logo de Expensa Fácil" class="logo" >
+                    <h1 class="mt-5 font-weight-bold text-center">Simplifica la administración de tu consorcio hoy mismo.<span class="cursor">|</span></h1>
+
+                    <p class="mt-4 text-center">Bienvenido a Expensa Fácil, la plataforma que estabas buscando para administrar tus consorcios de manera rápida, sencilla y transparente. Experimenta una gestión eficiente y sin contratiempos, eliminando procedimientos tediosos y disfrutando de una experiencia libre de estrés. </p>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="nuestros-servicios" class="nuestros-servicios">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="card">
+                        <div class="card-body">
+                            <h2 class="card-title">PLATAFORMA EDIFICIOS</h2>
+                            <ul class="list-group">
+                                <li class="list-group-item">Gestión de Expensas</li>
+                                <li class="list-group-item">Facilidad en carga de Gastos / Facturas</li>
+                                <li class="list-group-item">Portal de Comunicaciones (Globales, por Consorcio y a propietarios)</li>
+                                <li class="list-group-item">Consulta rápida de Deuda por Propietario</li>
+                                <li class="list-group-item">Identificación de cobros Automático</li>
+                                <li class="list-group-item">Portal para propietarios</li>
+                            </ul>
+                            <p class="card-text precio-pie">$321 / x Mes x Uf. c/Débito Automático (PRECIO FINAL)</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <div class="card mt-4 mt-md-0">
+                        <div class="card-body">
+                            <h2 class="card-title">SUELDOS Y ASESORÍA</h2>
+                            <ul class="list-group">
+                                <li class="list-group-item">Liquidación de sueldos</li>
+                                <li class="list-group-item">Presentaciones 931</li>
+                                <li class="list-group-item">Presentación SUTERH/FATERYH</li>
+                                <li class="list-group-item">Presentaciones UTEDYC</li>
+                                <li class="list-group-item">Asesoramientos Contables</li>
+                            </ul>
+                            <p class="card-text precio-pie">$5096 / x Empleado (PRECIO FINAL)</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="contacto" class="contacto">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-6">
+                    <div class="contacto-formulario">
+                        <h2 class="text-center mb-4">Envíanos tu consulta</h2>
+                        <form id="consultaForm">
+                            <div class="custom-form-group">
+                                <label for="nombre"><i class="fas fa-user"></i></label>
+                                <input type="text" class="form-control" id="nombre" name="nombre" placeholder="Nombre" required>
+                            </div>
+    
+                            <div class="custom-form-group">
+                                <label for="mail"><i class="fas fa-envelope"></i></label>
+                                <input type="email" class="form-control" id="mail" name="mail" placeholder="Mail" required>
+                            </div>
+    
+                            <div class="custom-form-group">
+                                <label for="localidad"><i class="fas fa-map-marker-alt"></i></label>
+                                <input type="text" class="form-control" id="localidad" name="localidad" placeholder="Localidad" required>
+                            </div>
+    
+                            <div class="form-group">
+                                <label for="consulta"><i class="fas fa-comments"></i> Consulta:</label>
+                                <textarea class="form-control" id="consulta" name="consulta" rows="4" placeholder="Ingrese su consulta" required></textarea>
+                            </div>
+    
+                            
+                            <button type="submit" class="btn btn-primary btn-block"><i class="fas fa-paper-plane"></i> Enviar</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <footer class="footer">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-6 text-center">
+                    <h5>Contacto y Redes Sociales</h5>
+                    <ul class="list-inline social-icons">
+                        <li class="list-inline-item"><a href="mailto:info@expensa-facil.com"><i class="far fa-envelope fa-lg"></i></a></li>
+                        <li class="list-inline-item"><a href="https://wa.me/tunumerodetelefono" target="_blank"><i class="fab fa-whatsapp fa-lg"></i></a></li>
+                        <li class="list-inline-item"><a href="https://www.facebook.com/tupagina" target="_blank"><i class="fab fa-facebook fa-lg"></i></a></li>
+                        <li class="list-inline-item"><a href="https://www.twitter.com/tupagina" target="_blank"><i class="fab fa-twitter fa-lg"></i></a></li>
+                        <li class="list-inline-item"><a href="https://www.instagram.com/tupagina" target="_blank"><i class="fab fa-instagram fa-lg"></i></a></li>
+                        <li class="list-inline-item"><a href="https://www.linkedin.com/company/expensa-facil" target="_blank"><i class="fab fa-linkedin fa-lg"></i></a></li>
+                        <li class="list-inline-item"><a href="https://www.youtube.com/user/expensa-facil" target="_blank"><i class="fab fa-youtube fa-lg"></i></a></li>
+                    </ul>
+                    <p>&copy; 2024 Expensa Fácil. Todos los derechos reservados.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    
+
+    <!-- Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
