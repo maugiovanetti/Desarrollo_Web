@@ -17,7 +17,7 @@
 }
 
 .btn-transparent {
-    background-color: transparent !important;
+    background-color: transparent;
     color: rgba(0, 0, 0, 0.5);
     border: solid 1px rgba(0, 0, 0, 0.5) ;
     font-weight: bold;
@@ -90,9 +90,9 @@
   }
 
   
-  
 
-  h1 {
+
+ #sobre-nosotros h1 {
     font-size: 2em;
     font-weight: bold;
     display: block;
@@ -122,19 +122,19 @@
 
    
 @media (max-width: 992px) {
-    h1 {
+    #sobre-nosotros h1 {
       width: auto;
       border-right: none; 
       white-space: normal;
       
     }
   
-    .cursor {
+    #sobre-nosotros .cursor {
       display: inline;
-      animation: blink .5s infinite step-end alternate; 
+      animation: blink-mobile .5s infinite step-end alternate; 
     }
   
-    @keyframes blink {
+    @keyframes blink-mobile {
       50% {
         visibility: visible; 
       }
@@ -319,3 +319,63 @@ h1 {
     }
     
     }
+
+
+    .consorcio-card {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+      }
+      
+      /* Nuevos estilos agregados para manejar la navegación y el contenido de Consorcios */
+      body {
+        margin-top: 70px; /* Ajuste para la barra de navegación fija */
+      }
+      
+      .consorcio-card {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+      }
+
+
+      #principal {
+  
+ 
+   
+    
+      .footer {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        padding: 10px 0;
+        text-align: center;
+    }
+
+    h1 {
+        font-size: 2em;
+        font-weight: bold;
+        display: block;
+        font-family: monospace;
+        white-space: nowrap;
+        border-right: 4px solid;
+        width: 15ch;
+        animation: typing 2s steps(15), blink 1s infinite alternate;
+        overflow: hidden;
+    }
+    
+    @keyframes typing {
+        from {
+            width: 0;
+        }
+    }
+    
+    @keyframes blink {
+        50% {
+            border-color: transparent;
+        }
+    }
+
+
+    
+}
