@@ -1,0 +1,35 @@
+// Mixin para transiciones
+@mixin transition-default {
+  transition: all 0.3s ease-in-out;
+}
+
+
+
+// Mixin para animaciones de texto
+@mixin typing-effect($width, $steps) {
+  font-weight: bold;
+  display: block;
+  font-family: $font-family-textos;
+  white-space: nowrap;
+  border-right: 4px solid;
+  width: $width;
+  animation: typing 2s steps($steps), blink .5s infinite step-end alternate;
+  overflow: hidden;
+  color: $color-dark-solid;
+
+  @keyframes typing {
+    from {
+      width: 0;
+    }
+  }
+
+  @keyframes blink {
+    50% {
+      border-color:$color-transparent;
+    }
+  }
+}
+
+
+
+

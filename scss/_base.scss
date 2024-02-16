@@ -1,0 +1,340 @@
+
+* {
+    font-family: $font-family-base;
+    box-sizing: border-box;
+
+}
+
+
+
+  
+  .navbar {
+    backdrop-filter: $backdrop-blur;
+    background-color: $color-light;
+    margin-bottom: 50px;
+  }
+  
+  .btn-color-transparent {
+    background-color: $color-transparent;
+    color: $color-dark;
+    border: solid 1px $color-dark;
+    font-weight: bold;
+    @include transition-default;
+  
+    &:hover {
+      background-color: $color-light-hover;
+      transform: scale(1.05);
+    }
+  }
+
+  
+
+
+
+
+.nuestros-servicios {
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+
+
+.home,
+.nuestros-servicios {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+
+
+
+
+.home p {
+    font-size: 24px;
+    line-height: 1.6;
+}
+
+
+.card {
+    margin-bottom: 50px; 
+}
+
+.card-title {
+    border-bottom: 2px solid $border-color-light; 
+    padding-bottom: 10px; 
+}
+
+.card-text {
+    border-top: 2px solid $border-color-light; 
+    padding-top: 10px; 
+}
+
+.list-group-item:nth-child(odd) {
+    background-color: $color-dark; 
+}
+
+
+.list-group-item:nth-child(odd) {
+    background-color: white;
+    color: $color-dark-solid;
+    border: none;
+  }
+  
+  
+  .list-group-item:nth-child(even) {
+    background-color: $border-color-light;
+    color: $color-dark-solid;
+    border: none;
+  }
+
+  
+
+
+ #sobre-nosotros h1 {
+    font-size: 2em;
+    @include typing-effect(55ch, 55);
+  }
+
+    .cursor {
+        visibility: hidden; 
+      }
+
+
+   
+      @media (max-width: 992px) {
+        #sobre-nosotros h1 {
+          width: auto;
+          border-right: none; 
+          white-space: normal;
+          
+        }
+      
+        #sobre-nosotros .cursor {
+          display: inline;
+          animation: blink-mobile .5s infinite step-end alternate; 
+        }
+      
+        @keyframes blink-mobile {
+          50% {
+            visibility: visible; 
+          }
+        }
+      }
+    
+
+
+  
+  .contacto {
+    min-height: 85vh; 
+    display: flex;
+    align-items: center;
+    padding: 50px 0;
+    position: relative;
+}
+
+
+.contacto h2{
+    font-size: 2em;
+    font-weight: bold;
+    
+}
+
+
+.contacto-formulario {
+    background-color: $color-white;
+    box-shadow: 0px 0px 10px $color-black-transparent;
+    padding: 20px;
+    border-radius: 5px;
+    width: 100%; 
+}
+
+.custom-form-group {
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px; 
+}
+
+.custom-form-group input,
+.custom-form-group textarea {
+    border: none;
+    border-bottom: 2px solid $color-gray-light;
+    flex: 1;
+    border-radius: 0; 
+    transition: border-color 0.3s;
+}
+
+.custom-form-group label {
+    padding-right: 10px;
+}
+
+.btn-primary {
+    background-color: $color-blue-bright;
+    color: $color-white;
+    border: none;
+}
+
+.btn-primary:hover {
+    background-color: $color-blue-light;
+}
+
+
+.custom-form-group input:focus,
+.custom-form-group textarea:focus {
+    border-color: $color-gray-medium; 
+    box-shadow: none;
+}
+
+
+
+.footer {
+    height: auto;
+    bottom: 0;
+    width: 100%;
+    background-color: $color-background-light;
+    padding: 10px 0;
+    text-align: center;
+    
+    
+}
+
+.social-icons {
+    list-style: none;
+    padding: 0;
+}
+
+
+.social-icons a {
+    text-decoration: none;
+}
+
+.social-icons i:hover {
+    color: $color-blue-light;
+}
+
+.footer p {
+
+    margin-top: 20px;
+    color: $color-green-dark; 
+}
+
+#register {
+
+   
+h1 {
+    font-size: 1.5em;
+    @include typing-effect(16ch, 16);
+  }
+
+  
+.logo {
+        width: 150px;
+    }
+
+
+.contacto-formulario {
+    margin-top: 7vh; 
+    margin-bottom: 7vh
+    ; 
+}
+
+}
+
+
+
+#login {
+
+   
+    h1 {
+        font-size: 1.5em;
+        @include typing-effect(15ch, 15);
+     }
+     
+       
+    
+    .logo {
+            width: 150px;
+        }
+    
+    
+    .contacto-formulario {
+        margin-top: 7vh; 
+        margin-bottom: 7vh
+        ; 
+    }
+    
+    }
+
+
+    .consorcio-card {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+      }
+      
+      /* Nuevos estilos agregados para manejar la navegación y el contenido de Consorcios */
+      body {
+        margin-top: 70px; /* Ajuste para la barra de navegación fija */
+      }
+      
+      .consorcio-card {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+      }
+
+
+    #principal {
+  
+ 
+   
+    
+      .footer {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        padding: 10px 0;
+        text-align: center;
+    }
+
+    h1 {
+        font-size: 2em;
+        @include typing-effect(15ch, 15);}
+ 
+
+    
+}
+
+#micuenta {
+.content-container {
+    margin-bottom: 30px; /* Espaciado entre la información y el footer */
+  }
+
+  .info-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .info-column {
+    width: 48%; /* Ancho de cada columna, ajusta según tus necesidades */
+    margin-bottom: 20px;
+  }
+
+  @media (max-width: 768px) {
+    .info-column {
+      width: 100%; /* En dispositivos pequeños, ocupa todo el ancho */
+    }
+  }
+
+
+  h1 {
+    font-size: 2em;
+    @include typing-effect(10ch, 10);}
+
+}
+
